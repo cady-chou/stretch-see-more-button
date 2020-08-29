@@ -1,0 +1,107 @@
+* {
+    position: relative;
+}
+
+html,
+body {
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+}
+
+.btn {
+    height: 100%;
+    background-color: tan;
+}
+
+.btn .button {
+    text-decoration: none;
+    padding: 10px 30px;
+    background-color: teal;
+    line-height: 24px;
+    border-radius: 22px;
+    color: #fff;
+    font-family: 微軟正黑體;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 6px 6px 13px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+
+.button:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(256, 256, 256, 0.2);
+    width: 0%;
+    padding-top: 0%;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+.button:hover:before {
+    width: 120%;
+    padding-top: 120%;
+}
+
+.button:active {
+    color: black;
+    box-shadow: 3px 3px 9px rgba(0, 0, 0, 0.5);
+}
+
+.btn1 {
+    height: 100%;
+    background-color: #444444;
+    position: relative;
+}
+
+.btn1 .more {
+    border: 1px solid #ffdd55;
+    text-decoration: none;
+    color: #ffdd55;
+    font-family: 微軟正黑體;
+    border-radius: 36px;
+    height: 40px;
+    width: 39px;
+    line-height: 17px;
+    position: absolute;
+    top: 100px;
+    right: 100px;
+    transition: 0.3s;
+    background-color: #ffdd55;
+    overflow: hidden;
+}
+
+.more span {
+    white-space: nowrap;
+    opacity: 0;
+    font-size: 16px;
+}
+
+.more:hover span {
+    opacity: 1;
+}
+
+.more:after {
+    content: "+";
+    font-size: 30px;
+    line-height: 1px;
+    position: absolute;
+    right: 8px;
+    color: #444444;
+}
+
+.more:hover {
+    padding: 10px 30px;
+    background-color: #444444;
+    width: auto;
+    height: 20px;
+}
+
+.more:hover:after {
+    opacity: 0;
+}
